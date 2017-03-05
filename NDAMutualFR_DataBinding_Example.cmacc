@@ -6,17 +6,19 @@ $ party1 = [yarn://cmacc-example-id/OrangeBank.cmacc];
 
 $ party1_Full_Name = party1.full_Name;
 
-$ party1_Legal_Form = "party1_Legal_Form";
+$ party1_Legal_Form = party1.entity_a_FR;
 
-$ party1_Jurisdiction_Origin = "party1_Jurisdiction_Origin";
+$ party1_Jurisdiction_Origin = party1.jurisdiction_Origin;
 
-$ party1_Address_1Line = "party1_Address_1Line";
+$ party1_Address_1Line = [yarn://cmacc-lib-fr/_adr_12.cmacc] => {
+    "adr" : party1.adr
+};
 
-$ party1_Tax_ID = "party1_Tax_ID";
+$ party1_Tax_ID = party1.gov_ID_Num;
 
-$ party1_Rep_Name = "party1_Rep_Name";
+$ party1_Rep_Name = party1.sign_Rep.full_Name;
 
-$ party1_Rep_Title = "party1_Rep_Title";
+$ party1_Rep_Title = party1.sign_Title;
 
 $ party1_Handle = "la « Société »";
 
@@ -24,27 +26,29 @@ $ party1_Handle = "la « Société »";
 
 $ party2 = [yarn://cmacc-example-id/BernardService.cmacc];
 
-$ party2_Full_Name = "party2_Full_Name";
+$ party2_Full_Name = party2.full_Name;
 
-$ party2_Legal_Form = "party2_Legal_Form";
+$ party2_Legal_Form = party2.entity_a_FR;
 
-$ party2_Jurisdiction_Origin = "party2_Jurisdiction_Origin";
+$ party2_Jurisdiction_Origin = party2.jurisdiction_Origin;
 
-$ party2_Address_1Line = "party2_Address_1Line";
+$ party2_Address_1Line = [yarn://cmacc-lib-fr/_adr_12.cmacc] => {
+    "adr" : party2.adr
+};
 
-$ party2_Tax_ID = "party2_Tax_ID";
+$ party2_Tax_ID = party2.gov_ID_Num;
 
-$ party2_Rep_Name = "party2_Rep_Name";
+$ party2_Rep_Name = party2.sign_Rep.full_Name;
 
-$ party2_Rep_Title = "party2_Rep_Title";
+$ party2_Rep_Title = party2.sign_Title;
 
 $ party2_Handle = "le « Prestataire»";
 
-$ party2_Expertise = "party2_Expertise";
+$ party2_Expertise = party2.expertise_FR;
 
 // Description of the work
 
-$ work_Scope = "work_Scope";
+$ work_Scope = "la réalisation d'un pilote pour tester la technologie";
 
 $ work_Creations = "work_Creations";
 
@@ -60,9 +64,11 @@ $ confid_Jurisdiction = "des tribunaux de Paris";
 
 // Signature
 
-$ sign_Place = "sign_Place";
+$ party1_Sign_Place = "Suresnes";
 
-$ sign_Date = "sign_Date";
+$ party2_Sign_Place = "Paris";
+
+$ sign_Date = "3 mars 2017";
 
 
 // Template utilisé
@@ -92,10 +98,11 @@ $ content = [yarn://cmacc-bondard-nda-fr/NDAMutualFR.cmacc] => {
     "confid_Duration" : confid_Duration,
     "confid_Law" : confid_Law,
     "confid_Jurisdiction" : confid_Jurisdiction,
-    "sign_Place" : sign_Place,
+    "party1_Sign_Place" : party1_Sign_Place,
+    "party2_Sign_Place" : party2_Sign_Place,
     "sign_Date" : sign_Date
 };
-    
+
 // Document
 
 {{content}} 

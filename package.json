@@ -5,5 +5,14 @@
   "repository": "https://github.com/cmacclang/cmacc-example-bondard-nda-fr.git",
   "author": "Marc Dangeard <marc@dangeard.com>",
   "license": "MIT",
-  "flat" : true
+  "flat" : true,
+  "dependencies": {
+    "cmacc-bondard-nda-fr": "cmacclang/cmacc-bondard-nda-fr",
+    "cmacc-lib-id": "cmacclang/cmacc-lib-id",
+    "cmacc-lib-geo": "cmacclang/cmacc-lib-geo",
+    "cmacc-lib-fr": "cmacclang/cmacc-lib-fr",
+    "cmacc-lib-lang": "cmacclang/cmacc-lib-lang",
+    "cmacc-example-geo": "cmacclang/cmacc-example-geo",
+    "cmacc-example-id": "cmacclang/cmacc-example-id"
+  }
 }
