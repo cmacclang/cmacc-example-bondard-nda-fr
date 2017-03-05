@@ -1,0 +1,101 @@
+// Parameters
+
+// Description of Party1
+
+$ party1 = [yarn://cmacc-example-id/OrangeBank.cmacc];
+
+$ party1_Full_Name = party1.full_Name;
+
+$ party1_Legal_Form = "party1_Legal_Form";
+
+$ party1_Jurisdiction_Origin = "party1_Jurisdiction_Origin";
+
+$ party1_Address_1Line = "party1_Address_1Line";
+
+$ party1_Tax_ID = "party1_Tax_ID";
+
+$ party1_Rep_Name = "party1_Rep_Name";
+
+$ party1_Rep_Title = "party1_Rep_Title";
+
+$ party1_Handle = "la « Société »";
+
+// Description of Party2
+
+$ party2 = [yarn://cmacc-example-id/BernardService.cmacc];
+
+$ party2_Full_Name = "party2_Full_Name";
+
+$ party2_Legal_Form = "party2_Legal_Form";
+
+$ party2_Jurisdiction_Origin = "party2_Jurisdiction_Origin";
+
+$ party2_Address_1Line = "party2_Address_1Line";
+
+$ party2_Tax_ID = "party2_Tax_ID";
+
+$ party2_Rep_Name = "party2_Rep_Name";
+
+$ party2_Rep_Title = "party2_Rep_Title";
+
+$ party2_Handle = "le « Prestataire»";
+
+$ party2_Expertise = "party2_Expertise";
+
+// Description of the work
+
+$ work_Scope = "work_Scope";
+
+$ work_Creations = "work_Creations";
+
+$ work_Materials = "work_Materials";
+
+$ work_Activities = "work_Activities";
+
+$ confid_Duration = "cinq années";
+
+$ confid_Law = "au droit français";
+
+$ confid_Jurisdiction = "des tribunaux de Paris";
+
+// Signature
+
+$ sign_Place = "sign_Place";
+
+$ sign_Date = "sign_Date";
+
+
+// Template utilisé
+
+$ content = [yarn://cmacc-bondard-nda-fr/NDAMutualFR.cmacc] => {
+    "party1_Full_Name" : party1_Full_Name,
+    "party1_Legal_Form" : party1_Legal_Form,
+    "party1_Jurisdiction_Origin" : party1_Jurisdiction_Origin,
+    "party1_Address_1Line" : party1_Address_1Line,
+    "party1_Tax_ID" : party1_Tax_ID,
+    "party1_Rep_Name" : party1_Rep_Name,
+    "party1_Rep_Title" : party1_Rep_Title,
+    "party1_Handle" : party1_Handle,
+    "party2_Full_Name" : party2_Full_Name,
+    "party2_Legal_Form" : party2_Legal_Form,
+    "party2_Jurisdiction_Origin" : party2_Jurisdiction_Origin,
+    "party2_Address_1Line" : party2_Address_1Line,
+    "party2_Tax_ID" : party2_Tax_ID,
+    "party2_Rep_Name" : party2_Rep_Name,
+    "party2_Rep_Title" : party2_Rep_Title,
+    "party2_Handle" : party2_Handle,
+    "party2_Expertise" : party2_Expertise,
+    "work_Scope" : work_Scope,
+    "work_Creations" : work_Creations,
+    "work_Materials" : work_Materials,
+    "work_Activities" : work_Activities,
+    "confid_Duration" : confid_Duration,
+    "confid_Law" : confid_Law,
+    "confid_Jurisdiction" : confid_Jurisdiction,
+    "sign_Place" : sign_Place,
+    "sign_Date" : sign_Date
+};
+    
+// Document
+
+{{content}} 
