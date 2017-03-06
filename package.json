@@ -7,12 +7,12 @@
   "license": "MIT",
   "flat" : true,
   "dependencies": {
-    "cmacc-bondard-nda-fr": "cmacclang/cmacc-bondard-nda-fr",
-    "cmacc-lib-id": "cmacclang/cmacc-lib-id",
-    "cmacc-lib-geo": "cmacclang/cmacc-lib-geo",
-    "cmacc-lib-fr": "cmacclang/cmacc-lib-fr",
-    "cmacc-lib-lang": "cmacclang/cmacc-lib-lang",
-    "cmacc-example-geo": "cmacclang/cmacc-example-geo",
-    "cmacc-example-id": "cmacclang/cmacc-example-id"
+    "cmacc-bondard-nda-fr": "cmacclang/cmacc-bondard-nda-fr#v1.1.2",
+    "cmacc-lib-id": "cmacclang/cmacc-lib-id#v1.1.5",
+    "cmacc-lib-geo": "cmacclang/cmacc-lib-geo#v1.1.0",
+    "cmacc-lib-fr": "cmacclang/cmacc-lib-fr#v1.1.4",
+    "cmacc-lib-lang": "cmacclang/cmacc-lib-lang#v1.1.2",
+    "cmacc-example-geo": "cmacclang/cmacc-example-geo#v1.1.1",
+    "cmacc-example-id": "cmacclang/cmacc-example-id#v1.1.3"
   }
 }
