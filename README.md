@@ -3,7 +3,7 @@
 This example is to show how the data binding works:
 - copy the directory locally (2 files really, the DataBinding file and the package.json)
 - do a yarn install in the local directory (assuming you have installed yarn, (see https://yarnpkg.com/lang/en/docs/install/#mac-tab if you have not)
-- open Visual Studio Code
+- open Visual Studio Code (install from here  https://code.visualstudio.com/download, with installation instructions for the Cmacc plugin here https://marketplace.visualstudio.com/items?itemName=wilmveel.cmacc-vscode)
 - in the DataBinding.cmacc file, do a "Ctrl Shft H" to visualize the full document.
 
 Why this is useful?
